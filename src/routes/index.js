@@ -6,11 +6,11 @@ import { routesData } from './routesData'
 import Button from '../components/Button'
 // import Table from '../components/Table'
 // import TextInput from '../components/TextInput'
-// import FieldLabel from '../components/FieldLabel'
+import FieldLabel from '../components/FieldLabel'
+import InstructionText from '../components/InstructionText'
 // import Notification from '../components/Notification'
 // import HelpText from '../components/HelpText'
 // import ValidationMessage from '../components/ValidationMessage'
-// import Typography from '../components/Typography'
 // import SelectBox from '../components/SelectBox'
 // import Dropdown from '../components/Dropdown'
 // import Icon from '../components/Icon'
@@ -55,7 +55,8 @@ const routesObj = {
   Button,
   // Table,
   // TextInput,
-  // FieldLabel,
+  FieldLabel,
+  InstructionText,
   // Notification,
   // HelpText,
   // ValidationMessage,

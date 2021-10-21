@@ -27,13 +27,20 @@ export const routesData = [
   //   exact: true,
   //   label: 'TextInput',
   // },
-  // {
-  //   uid: 4,
-  //   route: '/field-label',
-  //   component: 'FieldLabel',
-  //   exact: true,
-  //   label: 'FieldLabel',
-  // },
+  {
+    uid: 3,
+    route: '/field-label',
+    component: 'FieldLabel',
+    exact: true,
+    label: 'FieldLabel',
+  },
+  {
+    uid: 4,
+    route: '/InstructionTex',
+    component: 'InstructionText',
+    exact: true,
+    label: 'InstructionText',
+  },
   // {
   //   uid: 5,
   //   route: '/notification',
@@ -54,13 +61,6 @@ export const routesData = [
   //   component: 'ValidationMessage',
   //   exact: true,
   //   label: 'ValidationMessage',
-  // },
-  // {
-  //   uid: 8,
-  //   route: '/typography',
-  //   component: 'Typography',
-  //   exact: true,
-  //   label: 'Typography',
   // },
   // {
   //   uid: 9,
