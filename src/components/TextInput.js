@@ -18,34 +18,52 @@ const Password = () => <TextInput type="password" placeholder="Enter password" /
 
 const Number = () => <TextInput type="number" placeholder="Enter Number" />
 
+const textInputWrapper = {
+  display: 'flex',
+  width: '500px', 
+  flexWrap: 'wrap'
+}
+
 const TextInputComponents = () => {
+  // return (
+  //   <div>
+  //     <div style={{ marginBottom: '40px' }}>
+  //       <h4>Default</h4>
+  //       <Default />
+  //     </div>
+  //     <div style={{ marginBottom: '40px' }}>
+  //       <h4>DefaultWithValue</h4>
+  //       <DefaultWithValue />
+  //     </div>
+  //     <div style={{ marginBottom: '40px' }}>
+  //       <h4>Disabled</h4>
+  //       <Disabled />
+  //     </div>
+  //     <div style={{ marginBottom: '40px' }}>
+  //       <h4>Error</h4>
+  //       <Error />
+  //     </div>
+  //     <div style={{ marginBottom: '40px' }}>
+  //       <h4>Password</h4>
+  //       <Password />
+  //     </div>
+  //     <div style={{ marginBottom: '40px' }}>
+  //       <h4>Number</h4>
+  //       <Number />
+  //     </div>
+  //   </div>
+  // )
   return (
-    <div>
-      <div style={{ marginBottom: '40px' }}>
-        <h4>Default</h4>
-        <Default />
+    <>
+      <div>
+        <div style={{marginBottom: "15px", marginTop: '30px'}}>
+          Default with value
+        </div>
+        <div style={textInputWrapper}>
+          <TextInput type="text" showCharacterCount={true} maxLength={20} value="Pre Existing Value" placeholder="Type Something..." />
+        </div>
       </div>
-      <div style={{ marginBottom: '40px' }}>
-        <h4>DefaultWithValue</h4>
-        <DefaultWithValue />
-      </div>
-      <div style={{ marginBottom: '40px' }}>
-        <h4>Disabled</h4>
-        <Disabled />
-      </div>
-      <div style={{ marginBottom: '40px' }}>
-        <h4>Error</h4>
-        <Error />
-      </div>
-      <div style={{ marginBottom: '40px' }}>
-        <h4>Password</h4>
-        <Password />
-      </div>
-      <div style={{ marginBottom: '40px' }}>
-        <h4>Number</h4>
-        <Number />
-      </div>
-    </div>
+    </>
   )
 }
 
