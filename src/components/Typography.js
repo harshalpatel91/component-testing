@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Heading, Paragraph } from '@contentstack/venus-components'
+import { Heading, Paragraph ,Link} from '@contentstack/venus-components'
 
 const HeadingComponent = () => {
   const H1 = () => <Heading tagName="h1" text="Heading 1" />
@@ -57,7 +57,23 @@ const ParagraphComponent = () => {
     </div>
   )
 }
+const LinkComponent = () => {
+  const Default=()=><Link href="#" underline underLineType="dashed">Learn more</Link>
+  const ExternalLink=()=><Link href="#" type="external" underline underLineType="dashed">Learn more</Link>
 
+  return(
+    <div>
+      <div style={{ marginBottom: '40px' }}>
+        <h5>Default</h5>
+        <Default />
+      </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h5>External Link</h5>
+        <ExternalLink />
+      </div>
+    </div>
+  )
+}
 const Typography = () => {
   return (
     <div>
@@ -68,6 +84,10 @@ const Typography = () => {
       <div style={{ marginBottom: '40px' }}>
         <h3 style={{ marginBottom: '40px', color: '#6760c3' }}>ParagraphComponent</h3>
         <ParagraphComponent />
+      </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h3 style={{ marginBottom: '40px', color: '#6760c3' }}>LinkComponent</h3>
+        <LinkComponent />
       </div>
     </div>
   )

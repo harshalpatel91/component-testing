@@ -4,6 +4,7 @@ import { sortBy } from 'lodash'
 
 import { routesData } from './routesData'
 import Button from '../components/Button'
+import Textarea from '../components/Textarea'
 // import Table from '../components/Table'
 // import TextInput from '../components/TextInput'
 import FieldLabel from '../components/FieldLabel'
@@ -11,6 +12,7 @@ import InstructionText from '../components/InstructionText'
 // import Notification from '../components/Notification'
 // import HelpText from '../components/HelpText'
 // import ValidationMessage from '../components/ValidationMessage'
+import Typography from '../components/Typography'
 // import SelectBox from '../components/SelectBox'
 // import Dropdown from '../components/Dropdown'
 // import Icon from '../components/Icon'
@@ -53,6 +55,7 @@ const Home = () => {
 const routesObj = {
   Home,
   Button,
+  Textarea,
   // Table,
   // TextInput,
   FieldLabel,
@@ -60,7 +63,7 @@ const routesObj = {
   // Notification,
   // HelpText,
   // ValidationMessage,
-  // Typography,
+  Typography,
   // SelectBox,
   // Dropdown,
   // Icon,
