@@ -55,6 +55,62 @@ export const routesData = [
     exact: true,
     label: 'InstructionText',
   },
+  {
+    uid: 5,
+    route: '/select-box',
+    component: 'SelectBox',
+    exact: true,
+    label: 'Select',
+  },
+  {
+    uid: 6,
+    route: '/checkbox',
+    component: 'Checkbox',
+    exact: true,
+    label: 'Checkbox',
+  },
+  {
+    uid: 7,
+    route: '/radio',
+    component: 'Radio',
+    exact: true,
+    label: 'Radio',
+  },
+  {
+    uid: 8,
+    route: '/toggleSwitch',
+    component: 'ToggleSwitch',
+    exact: true,
+    label: 'ToggleSwitch',
+  },
+  {
+    uid: 9,
+    route: '/typography',
+    component: 'Typography',
+    exact: true,
+    label: 'Typography',
+  },
+  {
+    uid: 10,
+    route: '/text-area',
+    component: 'Textarea',
+    exact: true,
+    label: 'Textarea',
+  },
+  {
+    uid: 11,
+    route: '/table',
+    component: 'Table',
+    exact: true,
+    label: 'Table',
+  }
+  // {
+  //   uid: 3,
+  //   route: '/text-input',
+  //   component: 'TextInput',
+  //   exact: true,
+  //   label: 'TextInput',
+  // },
   // {
   //   uid: 5,
   //   route: '/notification',
@@ -76,19 +132,12 @@ export const routesData = [
   //   exact: true,
   //   label: 'ValidationMessage',
   // },
-  {
-    uid: 8,
-    route: '/typography',
-    component: 'Typography',
-    exact: true,
-    label: 'Typography',
-  },
   // {
-  //   uid: 9,
-  //   route: '/select-box',
-  //   component: 'SelectBox',
+  //   uid: 8,
+  //   route: '/typography',
+  //   component: 'Typography',
   //   exact: true,
-  //   label: 'SelectBox',
+  //   label: 'Typography',
   // },
   // {
   //   uid: 10,
@@ -117,13 +166,5 @@ export const routesData = [
   //   component: 'PageHeader',
   //   exact: true,
   //   label: 'PageHeader',
-  // },
-  {
-    uid: 14,
-    route: '/text-area',
-    component: 'Textarea',
-    exact: true,
-    label: 'Textarea',
-  },
-  
+  // }  
 ]

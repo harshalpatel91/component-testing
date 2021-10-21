@@ -4,6 +4,10 @@ import { sortBy } from 'lodash'
 
 import { routesData } from './routesData'
 import Button from '../components/Button'
+import Table from '../components/Table'
+import Checkbox from '../components/Checkbox'
+import Radio from '../components/Radio'
+import ToggleSwitch from '../components/ToggleSwitch'
 import Textarea from '../components/Textarea'
 // import Table from '../components/Table'
 import TextInput from '../components/TextInput'
@@ -14,11 +18,13 @@ import OutlineTag from '../components/OutlineTag';
 // import TextInput from '../components/TextInput'
 import FieldLabel from '../components/FieldLabel'
 import InstructionText from '../components/InstructionText'
+import SelectBox from '../components/SelectBox'
+import Typography from '../components/Typography'
 // import Notification from '../components/Notification'
 // import HelpText from '../components/HelpText'
 // import ValidationMessage from '../components/ValidationMessage'
-import Typography from '../components/Typography'
-// import SelectBox from '../components/SelectBox'
+// import Typography from '../components/Typography'
+// import TextInput from '../components/TextInput'
 // import Dropdown from '../components/Dropdown'
 // import Icon from '../components/Icon'
 // import PageLayout from '../components/PageLayout'
@@ -67,20 +73,24 @@ const routesObj = {
   // Table,
   // FieldLabel,
   Textarea,
-  // Table,
-  // TextInput,
   FieldLabel,
   InstructionText,
-  // Notification,
-  // HelpText,
-  // ValidationMessage,
+  Checkbox,
+  Radio,
+  ToggleSwitch,
+  SelectBox,
+  Table,
   Typography,
-  // SelectBox,
   // Dropdown,
   // Icon,
   // PageLayout,
   // PageHeader,
   // Tabs,
+  // TextInput,
+  // Notification,
+  // HelpText,
+  // ValidationMessage,
+  // Typography,
 }
 
 const AppRouteSetUp = ({ component: Component, ...rest }) => (
