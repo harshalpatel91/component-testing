@@ -8,13 +8,16 @@ import Table from '../components/Table'
 import Checkbox from '../components/Checkbox'
 import Radio from '../components/Radio'
 import ToggleSwitch from '../components/ToggleSwitch'
-// import TextInput from '../components/TextInput'
-// import FieldLabel from '../components/FieldLabel'
+import Textarea from '../components/Textarea'
+import FieldLabel from '../components/FieldLabel'
+import InstructionText from '../components/InstructionText'
+import SelectBox from '../components/SelectBox'
+import Typography from '../components/Typography'
 // import Notification from '../components/Notification'
 // import HelpText from '../components/HelpText'
 // import ValidationMessage from '../components/ValidationMessage'
 // import Typography from '../components/Typography'
-import SelectBox from '../components/SelectBox'
+// import TextInput from '../components/TextInput'
 // import Dropdown from '../components/Dropdown'
 // import Icon from '../components/Icon'
 // import PageLayout from '../components/PageLayout'
@@ -56,22 +59,25 @@ const Home = () => {
 const routesObj = {
   Home,
   Button,
-  Table,
-  // TextInput,
-  // FieldLabel,
-  // Notification,
-  // HelpText,
-  // ValidationMessage,
-  // Typography,
+  Textarea,
+  FieldLabel,
+  InstructionText,
+  Checkbox,
+  Radio,
+  ToggleSwitch,
   SelectBox,
+  Table,
+  Typography,
   // Dropdown,
   // Icon,
   // PageLayout,
   // PageHeader,
   // Tabs,
-  Checkbox,
-  Radio,
-  ToggleSwitch
+  // TextInput,
+  // Notification,
+  // HelpText,
+  // ValidationMessage,
+  // Typography,
 }
 
 const AppRouteSetUp = ({ component: Component, ...rest }) => (
