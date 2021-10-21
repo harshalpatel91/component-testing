@@ -4,14 +4,17 @@ import { sortBy } from 'lodash'
 
 import { routesData } from './routesData'
 import Button from '../components/Button'
-// import Table from '../components/Table'
+import Table from '../components/Table'
+import Checkbox from '../components/Checkbox'
+import Radio from '../components/Radio'
+import ToggleSwitch from '../components/ToggleSwitch'
 // import TextInput from '../components/TextInput'
 // import FieldLabel from '../components/FieldLabel'
 // import Notification from '../components/Notification'
 // import HelpText from '../components/HelpText'
 // import ValidationMessage from '../components/ValidationMessage'
 // import Typography from '../components/Typography'
-// import SelectBox from '../components/SelectBox'
+import SelectBox from '../components/SelectBox'
 // import Dropdown from '../components/Dropdown'
 // import Icon from '../components/Icon'
 // import PageLayout from '../components/PageLayout'
@@ -53,19 +56,22 @@ const Home = () => {
 const routesObj = {
   Home,
   Button,
-  // Table,
+  Table,
   // TextInput,
   // FieldLabel,
   // Notification,
   // HelpText,
   // ValidationMessage,
   // Typography,
-  // SelectBox,
+  SelectBox,
   // Dropdown,
   // Icon,
   // PageLayout,
   // PageHeader,
   // Tabs,
+  Checkbox,
+  Radio,
+  ToggleSwitch
 }
 
 const AppRouteSetUp = ({ component: Component, ...rest }) => (
