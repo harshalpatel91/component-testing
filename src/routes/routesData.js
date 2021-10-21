@@ -55,13 +55,13 @@ export const routesData = [
   //   exact: true,
   //   label: 'ValidationMessage',
   // },
-  // {
-  //   uid: 8,
-  //   route: '/typography',
-  //   component: 'Typography',
-  //   exact: true,
-  //   label: 'Typography',
-  // },
+  {
+    uid: 8,
+    route: '/typography',
+    component: 'Typography',
+    exact: true,
+    label: 'Typography',
+  },
   // {
   //   uid: 9,
   //   route: '/select-box',
@@ -97,11 +97,12 @@ export const routesData = [
   //   exact: true,
   //   label: 'PageHeader',
   // },
-  // {
-  //   uid: 13,
-  //   route: '/tabs',
-  //   component: 'Tabs',
-  //   exact: true,
-  //   label: 'Tabs',
-  // },
+  {
+    uid: 14,
+    route: '/text-area',
+    component: 'Textarea',
+    exact: true,
+    label: 'Textarea',
+  },
+  
 ]
