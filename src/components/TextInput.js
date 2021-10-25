@@ -111,6 +111,15 @@ const TextInputComponents = () => {
 
       <div>
         <div style={{marginBottom: "15px", marginTop: '30px'}}>
+          Character Length
+        </div>
+        <div style={textInputWrapper}>
+          <TextInput placeholder="Enter value..." showCharacterCount maxLength={20}  type="text" width="large"/>
+        </div>
+      </div>
+
+      <div>
+        <div style={{marginBottom: "15px", marginTop: '30px'}}>
           Varying Input Field
         </div>
         <div>
