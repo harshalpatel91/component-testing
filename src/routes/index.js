@@ -9,17 +9,18 @@ import Checkbox from '../components/Checkbox'
 import Radio from '../components/Radio'
 import ToggleSwitch from '../components/ToggleSwitch'
 import Textarea from '../components/Textarea'
-// import Table from '../components/Table'
 import TextInput from '../components/TextInput'
 import Tag from '../components/Tag'
 import EditableTag from '../components/EditableTag'
 import OutlineTag from '../components/OutlineTag';
-// import FieldLabel from '../components/FieldLabel'
-// import TextInput from '../components/TextInput'
 import FieldLabel from '../components/FieldLabel'
 import InstructionText from '../components/InstructionText'
 import SelectBox from '../components/SelectBox'
 import Typography from '../components/Typography'
+import Modal from '../components/Modal'
+// import Table from '../components/Table'
+// import FieldLabel from '../components/FieldLabel'
+// import TextInput from '../components/TextInput'
 // import Notification from '../components/Notification'
 // import HelpText from '../components/HelpText'
 // import ValidationMessage from '../components/ValidationMessage'
@@ -70,8 +71,6 @@ const routesObj = {
   Tag,
   EditableTag,
   OutlineTag,
-  // Table,
-  // FieldLabel,
   Textarea,
   FieldLabel,
   InstructionText,
@@ -81,6 +80,9 @@ const routesObj = {
   SelectBox,
   Table,
   Typography,
+  Modal
+  // Table,
+  // FieldLabel,
   // Dropdown,
   // Icon,
   // PageLayout,

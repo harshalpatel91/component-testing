@@ -103,6 +103,13 @@ export const routesData = [
     component: 'Table',
     exact: true,
     label: 'Table',
+  },
+  {
+    uid: 12,
+    route: '/modal',
+    component: 'Modal',
+    exact: true,
+    label: 'Modal',
   }
   // {
   //   uid: 3,
