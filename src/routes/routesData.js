@@ -110,7 +110,21 @@ export const routesData = [
     component: 'Modal',
     exact: true,
     label: 'Modal',
-  }
+  },
+  {
+    uid: 13,
+    route: '/dropdown',
+    component: 'Dropdown',
+    exact: true,
+    label: 'Dropdown',
+  },
+  {
+    uid: 14,
+    route: '/icon',
+    component: 'Icon',
+    exact: true,
+    label: 'Icon',
+  },
   // {
   //   uid: 3,
   //   route: '/text-input',

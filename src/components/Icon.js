@@ -1,208 +1,224 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import { Icon } from '@contentstack/venus-components'
 
-const Default = () => (
-  <div>
-    <span className="icon-spacing">
-      <Icon icon="Search" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Settings" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Logo" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Left" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Leftmost" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Right" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Rightmost" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Filter" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Dropdown" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="GridView" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Intercom" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="OrgSettings" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="ChevronDown" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Star" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="YellowStar" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Publish" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Unpublish" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="DownArrowDisabled" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="DownArrowEnabled" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="IconCopy" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Layout" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="HelpDocs" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Warning" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Error" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Success" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Info" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="CheckboxActive" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="CheckboxInactive" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Checked" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="ActiveRectangle" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Cancel" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Delete" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="GroupField" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="PageNotFoundError" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="PageConstructionError" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="LoginError" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Staging" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Production" size="small" />
-      <Icon icon="Hamburger" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="NewFolder" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="ChangeView" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="DeleteAsset" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetZoom" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Save" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="PublishAsset" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="UnpublishAsset" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="FullScreen" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Version" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetImage" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetVideo" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetAudio" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetExecutable" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetCode" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetArchive" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="AssetDocument" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="SingleCopyIcon" size="small" />
-    </span>
-    <span className="icon-spacing">
-      <Icon icon="Refresh" size="small" />
-    </span>
-  </div>
-)
+const icons = {
+  Assets: 'Assets',
+  // ContentModels: 'ContentModels',
+  Dashboard: 'Dashboard',
+  Entries: 'Entries',
+  Releases: 'Releases',
+  // Tasks: 'Tasks',
+}
 
-const IconColors = () => (
-  <div>
-    <div>
-      <Icon icon="Search" color="primary" /> Primary
-    </div>
-    <div>
-      <Icon icon="Search" color="secondary" /> Secondary
-    </div>
-    <div>
-      <Icon icon="Search" color="white" /> White
-    </div>
-  </div>
-)
+const Default = () => {
+  return(<div className="flex IconStoriesWrapper">
+  {Object.keys(icons).map((icon, index) => {
+    return (
+      <div key={`${icon}-${index}`} className="icon-spacing">
+        <Icon icon={icon} size={'large'} />
+      </div>
+    )
+  })}
+  </div>)
+}
 
-const IconSizes = () => (
-  <div>
+const IconState = () => {
+  return (<div className="IconStoriesWrapper">
     <div>
-      <Icon icon="Search" size="tiny" /> Tiny
+      <div>Default State :</div>
+      <div className="flex pb-10">
+        {Object.keys(icons).map((icon, index) => {
+          return (
+            <div key={`${icon}-${index}`} className="icon-spacing">
+              <Icon icon={icon} size="large" />
+            </div>
+          )
+        })}
+      </div>
     </div>
     <div>
-      <Icon icon="Search" size="small" /> Small
+      <div>Hover State:</div>
+      <div className="flex pb-10">
+        {Object.keys(icons).map((icon, index) => {
+          return (
+            <div key={`${icon}-${index}`} className="icon-spacing">
+              <Icon icon={icon} hover={true} size="large" />
+            </div>
+          )
+        })}
+      </div>
     </div>
     <div>
-      <Icon icon="Search" size="large" /> Large
+      <div>Active State:</div>
+      <div className="flex pb-10">
+        {Object.keys(icons).map((icon, index) => {
+          return (
+            <div key={`${icon}-${index}`} className="icon-spacing">
+              <Icon icon={icon} active={true} size="large" />
+            </div>
+          )
+        })}
+      </div>
     </div>
   </div>
-)
+  )
+}
+
+const IconHoverTypes = () => {
+  return (
+    <>
+      <div className="IconStoriesWrapper flex" style={{ flexDirection: 'column' }}>
+        <div>Hover Type: Primary (default)</div>
+        <div className="flex pb-10">
+          <div className="icon-spacing">
+            <Icon icon="Releases" hover={true} />
+          </div>
+          <div className="icon-spacing">
+            <Icon icon="Dashboard" hover={true} />
+          </div>
+          <div className="icon-spacing">
+            <Icon icon="Preferences" hover={true} />
+          </div>
+        </div>
+      </div>
+      <div className="IconStoriesWrapper flex" style={{ flexDirection: 'column' }}>
+        <div>Hover Type: Secondary</div>
+        <div className="flex pt-10 pb-10" style={{ columnGap: 20 }}>
+          <Icon icon="SettingsOutline" hover={true} hoverType='secondary' shadow='medium' />
+          <Icon icon="Expand" hover={true} hoverType='secondary' shadow='medium' />
+          <Icon icon="Compress" hover={true} hoverType='secondary' shadow='medium' />
+        </div>
+      </div>
+    </>
+  )
+}
+
+const IconStateUsingActiveIcon = () => {
+  const [activeIconState, setActiveIconState] = useState('exp')
+
+  return (
+    <div className="IconStoriesWrapper">
+      <div>
+        <div>Using only active:</div>
+        <div className="flex pb-10">
+          <div className="icon-spacing">
+            <Icon icon='Preferences' active={activeIconState === 'pref'} hover={true} size="large" onClick={() => setActiveIconState('pref')} />
+          </div>
+          <div className="icon-spacing">
+            <Icon icon='Assets' active={activeIconState === 'asset'} hover={true} size="large" onClick={() => setActiveIconState('asset')} />
+          </div>
+          <div className="icon-spacing">
+            <Icon icon='Entries' active={activeIconState === 'entries'} hover={true} size="large" onClick={() => setActiveIconState('entries')} />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>Using active with activeIcon:</div>
+        <div className="flex pb-10">
+          <div className="icon-spacing">
+            <Icon
+              icon='PersonalizationExperiences'
+              hover={true}
+              active={activeIconState === 'exp'}
+              activeIcon='PersonalizationExperiencesActive'
+              size="large"
+              onClick={() => setActiveIconState('exp')}
+            />
+          </div>
+          <div className="icon-spacing">
+            <Icon
+              icon='PersonalizationAudiences'
+              hover={true}
+              active={activeIconState === 'aud'}
+              activeIcon='PersonalizationAudiencesActive'
+              size="large"
+              onClick={() => setActiveIconState('aud')}
+            />
+          </div>
+          <div className="icon-spacing">
+            <Icon
+              icon='PersonalizationAttributes'
+              hover={true}
+              active={activeIconState === 'attr'}
+              activeIcon='PersonalizationAttributesActive'
+              size="large"
+              onClick={() => setActiveIconState('attr')}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const IconSizes = ()=>{
+return(  <div className="IconStoriesWrapper">
+<div className="flex-v-center">
+  <div>Tiny</div>
+  <Icon icon="Releases" size="tiny" />
+</div>
+<div className="flex-v-center">
+  <div>Small</div>
+  <Icon icon="Releases" size="small" />
+</div>
+<div className="flex-v-center">
+  <div>Medium</div>
+  <Icon icon="Releases" size="medium" />
+</div>
+<div className="flex-v-center">
+  <div>Large</div>
+  <Icon icon="Releases" size="large" />
+</div>
+<div className="flex-v-center">
+  <div>Original</div>
+  <Icon icon="Releases" size="original" />
+</div>
+</div>)  
+}
+
+const IconWithFillProperty = ()=>{
+  return(  <div className="IconStoriesWrapper">
+  <div className="flex-v-center">
+    <div>Default Icon</div>
+    <Icon icon="Dropdown" size="large" />
+  </div>
+  <div className="flex-v-center">
+    <div>Icon with fill property</div>
+    <Icon icon="Dropdown" size="large" fill={true} />
+  </div>
+</div>)
+}
+
+const IconWithHeightAndWidthProperty = ()=>{
+  return(
+    <div className="IconStoriesWrapper">
+    <div className="flex-v-center">
+      <div>Default Icon</div>
+      <Icon icon="Dropdown" size="large" />
+    </div>
+    <div className="flex-v-center">
+      <div>Icon with height and width property</div>
+      <Icon icon="Dropdown" height={"100px"} width={"100px"} />
+    </div>
+  </div>
+  )
+}
+
+const IconWithData=()=>{
+  const dataAsText = 'data as string'
+  const DataAsMarkup = <div>data as markup</div>
+  return (
+    <>
+      <div className="">
+        <Icon icon={icons.Assets} data={dataAsText} />
+      </div>
+      <div className="">
+        <Icon icon={icons.Assets} data={DataAsMarkup} />
+      </div>
+    </>
+  )
+}
 
 const IconComponents = () => {
   return (
@@ -212,13 +228,34 @@ const IconComponents = () => {
         <Default />
       </div>
       <div style={{ marginBottom: '40px' }}>
-        <h4>IconColors</h4>
-        <IconColors />
+        <h4>IconState</h4>
+        <IconState />
+      </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h4>IconHoverTypes</h4>
+        <IconHoverTypes />
+      </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h4>IconStateUsingActiveIcon</h4>
+        <IconStateUsingActiveIcon />
       </div>
       <div style={{ marginBottom: '40px' }}>
         <h4>IconSizes</h4>
         <IconSizes />
       </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h4>IconWithFillProperty</h4>
+        <IconWithFillProperty />
+      </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h4>IconWithHeightAndWidthProperty</h4>
+        <IconWithHeightAndWidthProperty />
+      </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h4>IconWithData</h4>
+        <IconWithData />
+      </div>
+      
     </div>
   )
 }

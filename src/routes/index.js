@@ -26,8 +26,8 @@ import Modal from '../components/Modal'
 // import ValidationMessage from '../components/ValidationMessage'
 // import Typography from '../components/Typography'
 // import TextInput from '../components/TextInput'
-// import Dropdown from '../components/Dropdown'
-// import Icon from '../components/Icon'
+import Dropdown from '../components/Dropdown'
+import Icon from '../components/Icon'
 // import PageLayout from '../components/PageLayout'
 // import PageHeader from '../components/PageHeader'
 // import Tabs from '../components/Tabs'
@@ -80,11 +80,11 @@ const routesObj = {
   SelectBox,
   Table,
   Typography,
-  Modal
+  Modal,
+  Dropdown,
+  Icon,
   // Table,
   // FieldLabel,
-  // Dropdown,
-  // Icon,
   // PageLayout,
   // PageHeader,
   // Tabs,
