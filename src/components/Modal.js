@@ -57,8 +57,8 @@ const Default = () => {
       component: (props) => <ModalComponent {...props} />,
       modalProps: {
         onClose,
-        onOpen: () => {
-          console.log('onOpen gets called')
+        onAfterOpen: () => {
+          console.log('onAfterOpen gets called')
         },
       },
       testId: 'cs-modal-storybook',
