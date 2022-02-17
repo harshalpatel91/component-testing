@@ -111,8 +111,16 @@ const ButtonComponents = () => {
           </div>
         </div>
       </div>
-
-      <div>
+    </>
+  )
+}
+const ButtonGroupComponent=()=>{
+  const handleClick = () => {
+    console.log('This is the click check');
+  }
+  return(
+    <>
+    <div>
         <div style={{marginBottom: "15px", marginTop: '30px'}}>
           Group Button
         </div>
@@ -124,5 +132,19 @@ const ButtonComponents = () => {
     </>
   )
 }
+const AllButtons = () => {
+  return (
+    <div>
+      <div style={{ marginBottom: '40px' }}>
+        <h3 style={{ marginBottom: '40px', color: '#6760c3' }}>Button Component</h3>
+        <ButtonComponents />
+      </div>
+      <div style={{ marginBottom: '40px' }}>
+        <h3 style={{ marginBottom: '40px', color: '#6760c3' }}>ButtonGroup Component</h3>
+        <ButtonGroupComponent />
+      </div>
+    </div>
+  )
+}
 
-export default ButtonComponents
+export default AllButtons
