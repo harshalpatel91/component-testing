@@ -146,6 +146,21 @@ export const routesData = [
     exact: true,
     label: 'Carousel',
   },
+  {
+    uid: 18,
+    route: '/field',
+    component: 'Field',
+    exact: true,
+    label: 'Field',
+  },
+  {
+    uid: 19,
+    route: '/search',
+    component: 'Search',
+    exact: true,
+    label: 'Search',
+  },
+  
   // {
   //   uid: 3,
   //   route: '/text-input',
