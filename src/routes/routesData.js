@@ -125,13 +125,20 @@ export const routesData = [
     exact: true,
     label: 'Icon',
   },
-  // {
-  //   uid: 3,
-  //   route: '/text-input',
-  //   component: 'TextInput',
-  //   exact: true,
-  //   label: 'TextInput',
-  // },
+  {
+    uid: 15,
+    route: '/notification',
+    component: 'Notification',
+    exact: true,
+    label: 'Notification',
+  },
+  {
+    uid: 16,
+    route: '/emptystate',
+    component: 'EmptyState',
+    exact: true,
+    label: 'EmptyState',
+  },
   // {
   //   uid: 5,
   //   route: '/notification',

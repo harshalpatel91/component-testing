@@ -56,12 +56,16 @@ export const Warning = () => {
 }
 
 export const Error = () => {
+  const error = {
+    "error_message": "Entry publishing failed. Please enter valid data.",
+    "errors": { "single_line": ["is a required field."], "group._metadata.uid": ["is a required field."], "group_ref._metadata.uid": ["is a required field."] }
+  }
   return (
     <div>
       <Button
         onClick={() =>
           Notification({
-            displayContent: { text: 'There is an error in your page' },
+            displayContent: { error: error },
             notifyProps: { hideProgressBar: true },
             type: 'error',
           })
