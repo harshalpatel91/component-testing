@@ -1,32 +1,19 @@
 import React, { useState } from 'react';
 import { Tooltip, Checkbox, Button } from '@contentstack/venus-components';
 
-const styleCss={
-    display: 'flex',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
-    width: '600px',
-    height: '100px',
-    textAlign: "center",
-    // alignContent: 'space-evenly',
-    color: '#010101',
-}
-
 export const Default = () => {
     const [arg, setArg] = useState({ content: 'Tooltip Content...', position: "right", type: "primary", variantType: "dark", disabled: false })
     return (
-      <div style={{marginTop: "30px"}}>
-        <div style={{...styleCss, marginLeft: "580px"}}>
-            <div>variantType: </div>
+      <div style={{marginTop: "20px"}}>
+        <div>
             <Checkbox label="dark" checked={arg.variantType==="dark"} onClick={()=>{if(arg.variantType!=="dark")setArg({...arg, variantType: "dark"})}}/>
             <Checkbox label="light" checked={arg.variantType==="light"} onClick={()=>{if(arg.variantType!=="light")setArg({...arg, variantType: "light"})}}/>
             <Checkbox label="menuIcon" checked={arg.variantType==="menuIcon"} onClick={()=>{if(arg.variantType!=="hover")setArg({...arg, variantType: "menuIcon"})}}/>
         </div>
-        <div style={{display: 'flex', marginLeft: "580px"}}>
-            <div style={{marginRight: "140px"}}>disable: </div>
+        <div>
             <Checkbox label="disable" checked={arg.disabled} onClick={()=>{setArg({...arg, disabled: !arg.disabled})}}/>
         </div>
-        <div style={{ marginBottom: '20px', marginTop: "30px" }}>
+        <div>
           <Tooltip content={arg.variantType === "menuIcon" ? { text: 'abc', icon: 'A' } : arg.content} position={arg.position} type={arg.type} variantType={arg.variantType} maxWidth={arg.maxWidth} disabled={arg.disabled}>
             <Button buttonType="primary">Hover for Tooltip</Button>
           </Tooltip>
@@ -49,7 +36,7 @@ export const CustomComponentAsContent = () => {
       )
     }
     return (
-        <div style={{...styleCss, marginLeft: "880px", marginTop: "30px"}}>
+        <div style={{marginTop: "20px"}}>
         <Tooltip content={<CustomComponent />} position="bottom" showArrow={false} variantType="light" trigger='click'>
             <Button buttonType="primary">Click me!</Button>
         </Tooltip>
@@ -59,7 +46,7 @@ export const CustomComponentAsContent = () => {
 
 export const WithArrow = () => {
     return (
-      <div style={{marginTop: "50px"}}>
+      <div style={{marginTop: "60px"}}>
         <div className="pl-10">
           <Tooltip
             content="Plain text to show additional information."
@@ -120,7 +107,7 @@ const ControlVisibility = (arg) => {
     const buttonText = showTooltip ? 'Hide Tooltip' : 'Show Tooltip';
   
     return (
-      <div style={{ position: "absolute", top: "20%", left: "10%" }}>
+      <div style={{marginTop: "20px"}}>
         <Tooltip
           content="Plain text to show additional information."
           position="right"
@@ -141,7 +128,7 @@ export const WithClose = (arg) => {
     const buttonText = showTooltip ? 'Hide Tooltip' : 'Show Tooltip';
   
     return (
-      <div style={{ position: "absolute", top: "20%", left: "10%" }}>
+      <div style={{marginTop: "20px"}}>
         <Tooltip
           content={
             <div style={{ width: 280 }}>
@@ -165,25 +152,25 @@ export const WithClose = (arg) => {
 const TooltipComponent = () => {
     return(
         <div style={{ textAlign: "center", height: "100%", width: "100%", overflow: "scroll"}} >
-            <div style={{marginBottom: "15px", marginTop: '30px' }}>
+            <div style={{ margin: "50px" }} >
                 <div>Default</div>
                 <Default />
             </div>
 
-            <div style={{marginBottom: "15px", marginTop: '60px', marginBottom: '60px' }}>
+            <div style={{ margin: "50px" }}>
                 <div>CustomComponentAsContent</div>
                 <CustomComponentAsContent />
             </div>
 
-            <div style={{marginBottom: "15px", marginTop: '30px' }}>
+            <div style={{ margin: "50px" }}>
                 <div>WithArrow</div>
                 <WithArrow />
             </div>
-            <div style={{marginBottom: "15px", marginTop: '30px' }}>
+            <div style={{ margin: "50px" }}>
                 <div>ControlVisibility</div>
                 <ControlVisibility />
             </div>
-            <div style={{marginBottom: "15px", marginTop: '30px' }}>
+            <div style={{ margin: "50px" }}>
                 <div>WithClose</div>
                 <WithClose />
             </div>
