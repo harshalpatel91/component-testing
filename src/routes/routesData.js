@@ -146,6 +146,13 @@ export const routesData = [
     exact: true,
     label: 'Carousel',
   },
+  {
+    uid: 18,
+    route: '/color-picker',
+    component: 'ColorPicker',
+    exact: true,
+    label: 'ColorPicker',
+  },
   // {
   //   uid: 3,
   //   route: '/text-input',
