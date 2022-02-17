@@ -125,6 +125,20 @@ export const routesData = [
     exact: true,
     label: 'Icon',
   },
+  {
+    uid: 15,
+    route: '/skeleton-tile',
+    component: 'SkeletonTile',
+    exact: true,
+    label: 'SkeletonTile',
+  },
+  {
+    uid: 16,
+    route: '/tooltip',
+    component: 'Tooltip',
+    exact: true,
+    label: 'Tooltip',
+  },
   // {
   //   uid: 3,
   //   route: '/text-input',

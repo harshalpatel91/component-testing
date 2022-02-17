@@ -18,6 +18,7 @@ import InstructionText from '../components/InstructionText'
 import SelectBox from '../components/SelectBox'
 import Typography from '../components/Typography'
 import Modal from '../components/Modal'
+import SkeletonTile from '../components/SkeletonTile'
 // import Table from '../components/Table'
 // import FieldLabel from '../components/FieldLabel'
 // import TextInput from '../components/TextInput'
@@ -27,6 +28,7 @@ import Modal from '../components/Modal'
 // import Typography from '../components/Typography'
 // import TextInput from '../components/TextInput'
 import Dropdown from '../components/Dropdown'
+import Tooltip from '../components/Tooltip'
 import Icon from '../components/Icon'
 // import PageLayout from '../components/PageLayout'
 // import PageHeader from '../components/PageHeader'
@@ -83,6 +85,8 @@ const routesObj = {
   Modal,
   Dropdown,
   Icon,
+  SkeletonTile,
+  Tooltip
   // Table,
   // FieldLabel,
   // PageLayout,
