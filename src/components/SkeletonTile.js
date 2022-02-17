@@ -70,15 +70,15 @@ const SkeletonTileComponent = () => {
     return(
         <div>
             <div style={{marginBottom: "15px", marginTop: '30px' }}>
-            <div >Default</div>
+            <div style={{ marginBottom: "20px" }}>Default</div>
             <Default />
             </div>
             <div style={{marginBottom: "15px", marginTop: '30px' }}>
-            <div>CustomSkeleton</div>
+            <div style={{ marginBottom: "20px" }}>CustomSkeleton</div>
             <CustomSkeleton />
             </div>
             <div style={{marginBottom: "15px", marginTop: '30px' }}>
-            <div>ImageSkeleton</div>
+            <div style={{ marginBottom: "20px" }}>ImageSkeleton</div>
             <ImageSkeleton />
             </div>
         </div>
