@@ -148,11 +148,40 @@ export const routesData = [
   },
   {
     uid: 18,
+    route: '/field',
+    component: 'Field',
+    exact: true,
+    label: 'Field',
+  },
+  {
+    uid: 19,
+    route: '/search',
+    component: 'Search',
+    exact: true,
+    label: 'Search',
+  },
+  {
+    uid: 20,
+    route: '/skeleton-tile',
+    component: 'SkeletonTile',
+    exact: true,
+    label: 'SkeletonTile',
+  },
+  {
+    uid: 21,
+    route: '/tooltip',
+    component: 'Tooltip',
+    exact: true,
+    label: 'Tooltip',
+  },
+  {
+    uid: 22,
     route: '/color-picker',
     component: 'ColorPicker',
     exact: true,
     label: 'ColorPicker',
   },
+  
   // {
   //   uid: 3,
   //   route: '/text-input',
