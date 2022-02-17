@@ -5,6 +5,7 @@ export const Default = () => {
     const [arg, setArg] = useState({ content: 'Tooltip Content...', position: "right", type: "primary", variantType: "dark", disabled: false })
     return (
       <div style={{marginTop: "20px"}}>
+        <div style={{display :'flex' , justifyContent:'center' , marginBottom:'10px'}}>
         <div>
             <Checkbox label="dark" checked={arg.variantType==="dark"} onClick={()=>{if(arg.variantType!=="dark")setArg({...arg, variantType: "dark"})}}/>
             <Checkbox label="light" checked={arg.variantType==="light"} onClick={()=>{if(arg.variantType!=="light")setArg({...arg, variantType: "light"})}}/>
@@ -12,6 +13,7 @@ export const Default = () => {
         </div>
         <div>
             <Checkbox label="disable" checked={arg.disabled} onClick={()=>{setArg({...arg, disabled: !arg.disabled})}}/>
+        </div>
         </div>
         <div>
           <Tooltip content={arg.variantType === "menuIcon" ? { text: 'abc', icon: 'A' } : arg.content} position={arg.position} type={arg.type} variantType={arg.variantType} maxWidth={arg.maxWidth} disabled={arg.disabled}>

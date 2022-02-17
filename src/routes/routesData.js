@@ -175,12 +175,27 @@ export const routesData = [
     label: 'Tooltip',
   },
   {
-    uid: 22,
-    route: '/color-picker',
-    component: 'ColorPicker',
-    exact: true,
-    label: 'ColorPicker',
-  },
+    uid : 22,
+  route: '/notification',
+  component: 'Notification',
+  exact: true,
+  label: 'Notification',
+},
+{
+  uid: 23,
+  route: '/emptystate',
+  component: 'EmptyState',
+  exact: true,
+  label: 'EmptyState',
+},
+{
+
+  uid: 24,
+  route: '/color-picker',
+  component: 'ColorPicker',
+  exact: true,
+  label: 'ColorPicker',
+},
   
   // {
   //   uid: 3,

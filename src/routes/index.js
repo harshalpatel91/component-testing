@@ -22,7 +22,8 @@ import SkeletonTile from '../components/SkeletonTile'
 // import Table from '../components/Table'
 // import FieldLabel from '../components/FieldLabel'
 // import TextInput from '../components/TextInput'
-// import Notification from '../components/Notification'
+import Notification from '../components/Notification'
+import EmptyState  from '../components/EmptyState'
 // import HelpText from '../components/HelpText'
 // import ValidationMessage from '../components/ValidationMessage'
 // import Typography from '../components/Typography'
@@ -91,6 +92,8 @@ const routesObj = {
   Modal,
   Dropdown,
   Icon,
+  Notification,
+  EmptyState,
   SkeletonTile,
   Tooltip,
   Accordion,
