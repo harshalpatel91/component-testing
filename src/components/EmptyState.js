@@ -12,7 +12,6 @@ export const Default = () => {
     return (<EmptyState
         type={'primary'}
         heading={'Structure your content with Content Types!'}
-        headingType={'large'}
         moduleIcon={'WorkflowModuleLarge'}
         description={'Think of content type as collection of fields or a template that can be used to create similar kinds of content. You can create different content types for different elements of your project (e.g., homepage, header, navigation)'}
         actions={<><div><Button onClick={() => { alert('clicked') }} buttonType="secondary" icon="UnpublishAsset" className="mr-20">Unpublish</Button><Button onClick={() => { alert('clicked') }} buttonType="primary" icon="CheckedWhite">Add</Button></div></>}
@@ -20,6 +19,7 @@ export const Default = () => {
         testId='custom-emptystate'
         width={'500px'}
         children={<ChildComponent />}
+        // headingType={'large'}
     // imgSrc={{ src: 'https://picsum.photos/536/354', alt: 'Error code' }}
     // displayImage={false}
     // img={<Icon icon="LoginError" />}
@@ -40,7 +40,7 @@ export const CustomComponent =()=> {
 }
 
 const EmptyStateComponents = () => {
-return(<div style={{display :'flex' , justifyContent:'space-evenly'}}>
+return(<div style={{display :'flex' , justifyContent:'space-evenly' , marginTop:'100px'}}>
         <div>
             <h5 style={{textAlign:'center'}}>Default EmptyState</h5>
             <Default/>

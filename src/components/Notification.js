@@ -77,7 +77,7 @@ export const Error = () => {
   )
 }
 
-export const ProTip = () => {
+export const Shortcut = () => {
   return (
     <div>
       <Button
@@ -86,13 +86,13 @@ export const ProTip = () => {
             displayContent: {
               component: (
                 <span className="flex-v-center">
-                  <span>Pro Tip : Press</span>
-                  <span className="Key-Shortcut">
-                    <Icon icon="NewFolder" />
-                  </span>{' '}
-                  <span>+</span>
-                  <span className="Key-Shortcut">m</span> <span>to show / hide menu bar</span>
-                </span>
+                <span>Pro Tip : Press</span>
+                <span className="Key-Shortcut">
+                  <Icon icon="NewFolder" />
+                </span>{' '}
+                <span>+</span>
+                <span className="Key-Shortcut">m</span> <span>to show / hide menu bar</span>
+              </span>
               ),
             },
             type: 'shortcut',
@@ -100,7 +100,7 @@ export const ProTip = () => {
           })
         }
       >
-        Pro Tip
+        Shortcut
       </Button>
     </div>
   )
@@ -188,8 +188,8 @@ const NotificationComponents = () => {
         <Error />
       </div>
       <div style={{ marginBottom: '40px' }}>
-        <h5>ProTip</h5>
-        <ProTip />
+        <h5>Shortcut</h5>
+        <Shortcut />
       </div>
       <div style={{ marginBottom: '40px' }}>
         <h5>WithCTA</h5>
