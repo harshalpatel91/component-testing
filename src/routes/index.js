@@ -30,6 +30,11 @@ import SkeletonTile from '../components/SkeletonTile'
 import Dropdown from '../components/Dropdown'
 import Tooltip from '../components/Tooltip'
 import Icon from '../components/Icon'
+import Accordion from '../components/Accordion';
+import AssetCardVertical from '../components/AssetCardVertical';
+import Carousel from '../components/Carousel';
+import Field from '../components/Field'
+import Search from '../components/Search'
 // import PageLayout from '../components/PageLayout'
 // import PageHeader from '../components/PageHeader'
 // import Tabs from '../components/Tabs'
@@ -86,7 +91,12 @@ const routesObj = {
   Dropdown,
   Icon,
   SkeletonTile,
-  Tooltip
+  Tooltip,
+  Accordion,
+  AssetCardVertical,
+  Carousel,
+  Field,
+  Search,
   // Table,
   // FieldLabel,
   // PageLayout,
