@@ -125,6 +125,27 @@ export const routesData = [
     exact: true,
     label: 'Icon',
   },
+  {
+    uid: 15,
+    route: '/accordion',
+    component: 'Accordion',
+    exact: true,
+    label: 'Accordion',
+  },
+  {
+    uid: 16,
+    route: '/asset-card-vertical',
+    component: 'AssetCardVertical',
+    exact: true,
+    label: 'AssetCardVertical',
+  },
+  {
+    uid: 17,
+    route: '/carousel',
+    component: 'Carousel',
+    exact: true,
+    label: 'Carousel',
+  },
   // {
   //   uid: 3,
   //   route: '/text-input',

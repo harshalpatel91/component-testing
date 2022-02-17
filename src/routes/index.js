@@ -28,6 +28,9 @@ import Modal from '../components/Modal'
 // import TextInput from '../components/TextInput'
 import Dropdown from '../components/Dropdown'
 import Icon from '../components/Icon'
+import Accordion from '../components/Accordion';
+import AssetCardVertical from '../components/AssetCardVertical';
+import Carousel from '../components/Carousel';
 // import PageLayout from '../components/PageLayout'
 // import PageHeader from '../components/PageHeader'
 // import Tabs from '../components/Tabs'
@@ -83,6 +86,9 @@ const routesObj = {
   Modal,
   Dropdown,
   Icon,
+  Accordion,
+  AssetCardVertical,
+  Carousel
   // Table,
   // FieldLabel,
   // PageLayout,
