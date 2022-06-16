@@ -37,6 +37,7 @@ import Carousel from '../components/Carousel';
 import ColorPicker from '../components/ColorPicker';
 import Field from '../components/Field'
 import Search from '../components/Search'
+import DateTimePicker from '../components/DateTimePicker'
 // import PageLayout from '../components/PageLayout'
 // import PageHeader from '../components/PageHeader'
 // import Tabs from '../components/Tabs'
@@ -102,6 +103,7 @@ const routesObj = {
   ColorPicker,
   Field,
   Search,
+  DateTimePicker,
   // Table,
   // FieldLabel,
   // PageLayout,

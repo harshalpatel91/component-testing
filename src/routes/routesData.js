@@ -196,7 +196,14 @@ export const routesData = [
   exact: true,
   label: 'ColorPicker',
 },
-  
+{
+
+  uid: 24,
+  route: '/date-time-picker',
+  component: 'DateTimePicker',
+  exact: true,
+  label: 'DateTimePicker',
+}
   // {
   //   uid: 3,
   //   route: '/text-input',
