@@ -38,6 +38,8 @@ import ColorPicker from '../components/ColorPicker';
 import Field from '../components/Field'
 import Search from '../components/Search'
 import DateTimePicker from '../components/DateTimePicker'
+import DatePicker from '../components/DatePicker';
+import DateRangePicker from '../components/DateRangePicker'
 // import PageLayout from '../components/PageLayout'
 // import PageHeader from '../components/PageHeader'
 // import Tabs from '../components/Tabs'
@@ -104,6 +106,8 @@ const routesObj = {
   Field,
   Search,
   DateTimePicker,
+  DatePicker,
+  DateRangePicker
   // Table,
   // FieldLabel,
   // PageLayout,

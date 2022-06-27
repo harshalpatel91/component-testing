@@ -203,6 +203,22 @@ export const routesData = [
   component: 'DateTimePicker',
   exact: true,
   label: 'DateTimePicker',
+},
+{
+
+  uid: 25,
+  route: '/date-picker',
+  component: 'DatePicker',
+  exact: true,
+  label: 'DatePicker',
+},
+{
+
+  uid: 26,
+  route: '/date-range-picker',
+  component: 'DateRangePicker',
+  exact: true,
+  label: 'DateRangePicker',
 }
   // {
   //   uid: 3,
